@@ -1,31 +1,43 @@
 def cal():
     while True:
         try :
+            print("[to exist press #]")
+            choice = input("Operator ( +  -  *  /  #)")
             a = int(input("1st Number"))
             b = int(input("2nd Number"))
-            choice = input("Operator [ + , - , * , / , #]")
+
             if choice=='+':
                 d = a + b
                 print("is Equal to" , d)
+                print("-------------------------")
+                print("Enter new math")
             elif choice == '-':
                 if b <0:
                     print("Enter Big Number")
                 else :
                     d = a -b
-                    print(b)
+                    print("is Equal to" , d)
+                    print("-------------------------")
+                    print("Enter new math")
+
             elif choice == '*':
                 d = a * b
-                print("is Equal to" , d)
+                print("is Equal to" , d )
+                print("-------------------------")
+                print("Enter new math")
+
             elif choice == '/':
                 if b < 0:
                     print("Cannot divide by zero")
                 else:
                     d = a / b
                     print("is Equal to" , d)
+                    print("-------------------------")
+                    print("Enter new math")
 
             elif choice == "#":
-                print("Have a nice ")
                 break
+
         except :
             print( "Enter Correct Number")
 
